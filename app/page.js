@@ -10,9 +10,12 @@ export default function Home() {
         <h1 style={{ maxWidth: "15ch", marginBottom: "var(--space-6)" }}>
           I turn complexity into clarity — then ship it.
         </h1>
-        <p style={{ fontSize: "var(--text-base)", maxWidth: "58ch", color: "var(--text-secondary)" }}>
-          Senior PM on the frontier of AI-native product work. Hands-on — I build real things,
-          test the real deal, and design the systems that help teams make better decisions faster.
+        <p style={{ fontSize: "var(--text-base)", maxWidth: "58ch", color: "var(--text-secondary)", marginBottom: "var(--space-4)" }}>
+          Product Manager building AI-native tools and systems for real-world work.
+          Engineer by training — I work close to the code and test the real thing.
+        </p>
+        <p style={{ fontSize: "var(--text-sm)", maxWidth: "52ch", color: "var(--text-tertiary)", fontFamily: "var(--font-mono)" }}>
+          Based in Scotland — near enough to the sea that the surf forecast has become a side project.
         </p>
       </section>
 
@@ -34,6 +37,71 @@ export default function Home() {
           <p style={{ color: "var(--text-primary)", lineHeight: "var(--leading-snug)" }}>
             Sustainable ambition — exceptional work at a liveable pace.
           </p>
+        </div>
+      </section>
+
+      <hr className="divider" />
+
+      {/* ── Career ───────────────────────────────────────────────────────── */}
+      <section className="container section">
+        <p className="label" style={{ marginBottom: "var(--space-6)" }}>Career</p>
+        <div style={{ display: "flex", flexDirection: "column", gap: "var(--space-6)", maxWidth: "58ch" }}>
+
+          <div>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "var(--space-2)" }}>
+              <span style={{ color: "var(--text-primary)", fontWeight: 600 }}>Wordsmith AI</span>
+              <span style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--text-tertiary)" }}>2025–present</span>
+            </div>
+            <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--accent)", marginBottom: "var(--space-2)" }}>Product Manager</p>
+            <p style={{ fontSize: "var(--text-sm)", color: "var(--text-secondary)", lineHeight: "var(--leading-snug)" }}>
+              Building AI-powered legal tooling — the first role where my background in law, engineering, and product are all in the same room.
+            </p>
+          </div>
+
+          <div>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "var(--space-2)" }}>
+              <span style={{ color: "var(--text-primary)", fontWeight: 600 }}>Revolut</span>
+              <span style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--text-tertiary)" }}>2024–2025</span>
+            </div>
+            <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--accent)", marginBottom: "var(--space-2)" }}>Senior Product Manager</p>
+            <p style={{ fontSize: "var(--text-sm)", color: "var(--text-secondary)", lineHeight: "var(--leading-snug)" }}>
+              Senior PM across consumer fintech at one of Europe&apos;s largest financial apps.
+            </p>
+          </div>
+
+          <div>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "var(--space-2)" }}>
+              <span style={{ color: "var(--text-primary)", fontWeight: 600 }}>Xendit</span>
+              <span style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--text-tertiary)" }}>2019–2024</span>
+            </div>
+            <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--accent)", marginBottom: "var(--space-2)" }}>PM → Senior PM → Product Lead</p>
+            <p style={{ fontSize: "var(--text-sm)", color: "var(--text-secondary)", lineHeight: "var(--leading-snug)" }}>
+              Four years scaling payments infrastructure across Southeast Asia. Joined as an early PM hire, left as Product Lead for Money-In across the region.
+            </p>
+          </div>
+
+          <div>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "var(--space-2)" }}>
+              <span style={{ color: "var(--text-primary)", fontWeight: 600 }}>Skyscanner</span>
+              <span style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--text-tertiary)" }}>2015–2019</span>
+            </div>
+            <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--accent)", marginBottom: "var(--space-2)" }}>Software Engineer → Product Manager</p>
+            <p style={{ fontSize: "var(--text-sm)", color: "var(--text-secondary)", lineHeight: "var(--leading-snug)" }}>
+              Started as a software engineer, transitioned into product. The engineering background I still rely on every day.
+            </p>
+          </div>
+
+          <div>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "var(--space-2)" }}>
+              <span style={{ color: "var(--text-primary)", fontWeight: 600 }}>MBM Commercial LLP</span>
+              <span style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--text-tertiary)" }}>2011–2015</span>
+            </div>
+            <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--accent)", marginBottom: "var(--space-2)" }}>Solicitor</p>
+            <p style={{ fontSize: "var(--text-sm)", color: "var(--text-secondary)", lineHeight: "var(--leading-snug)" }}>
+              Corporate law, advising startups and scale-ups. Quit in 2015 to retrain as a software engineer — the decision that set the direction of everything since.
+            </p>
+          </div>
+
         </div>
       </section>
 
