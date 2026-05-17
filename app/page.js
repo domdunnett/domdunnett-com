@@ -18,50 +18,50 @@ export default function Home() {
 
       <hr className="divider" />
 
-      {/* ── What I'm Looking For ─────────────────────────────────────────── */}
+      {/* ── How I Work ───────────────────────────────────────────────────── */}
       <section className="container section">
         <p className="label" style={{ marginBottom: "var(--space-12)" }}>
-          What I&apos;m Looking For
+          How I Work
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--space-6)" }}>
           <div className="card">
-            <h4 style={{ marginBottom: "var(--space-3)" }}>An AI-native senior PM role</h4>
+            <h4 style={{ marginBottom: "var(--space-3)" }}>AI as a platform shift, not a feature layer</h4>
             <p style={{ fontSize: "var(--text-sm)" }}>
-              I want to help shape both product direction and the future of how software gets built.
-              AI as a genuine platform shift — not a feature layer.
+              I treat AI as a genuine shift in how software gets built — not a trend to bolt
+              onto existing products. I stay close to the work: code, systems, evaluation.
             </p>
           </div>
           <div className="card">
-            <h4 style={{ marginBottom: "var(--space-3)" }}>Environments where craft still matters</h4>
+            <h4 style={{ marginBottom: "var(--space-3)" }}>Craft still matters</h4>
             <p style={{ fontSize: "var(--text-sm)" }}>
               I do my best work when product, design and engineering are genuinely close.
-              Speed matters — but so does quality. Direct, adult-to-adult communication.
-              Leadership that trusts people.
+              Speed matters — but so does quality. I care about directness, clarity, and
+              communication that treats people as adults.
+            </p>
+          </div>
+          <div className="card">
+            <h4 style={{ marginBottom: "var(--space-3)" }}>Systems thinking over isolated features</h4>
+            <p style={{ fontSize: "var(--text-sm)" }}>
+              I connect strategy to execution. I prototype quickly. I bridge technical and
+              non-technical worlds. I bring clarity to ambiguity — and I build things to
+              prove ideas rather than just describe them.
             </p>
           </div>
           <div className="card">
             <h4 style={{ marginBottom: "var(--space-3)" }}>Sustainable ambition</h4>
             <p style={{ fontSize: "var(--text-sm)" }}>
-              I want to do exceptional work. I no longer believe burnout and permanent urgency
-              are signs of a healthy company. The best work comes from people who have a life
-              outside work.
-            </p>
-          </div>
-          <div className="card">
-            <h4 style={{ marginBottom: "var(--space-3)" }}>Scotland-based. Hybrid-open.</h4>
-            <p style={{ fontSize: "var(--text-sm)" }}>
-              Based in Fife, near the coast. I enjoy being around strong teams in person.
-              The key for me is flexibility — a career that works alongside family life and
-              keeps me connected to the things that keep me grounded.
+              Exceptional work doesn&apos;t require burnout or permanent urgency. I believe the
+              best work comes from people who have a life outside work — and I try to be
+              one of those people.
             </p>
           </div>
         </div>
 
         <div style={{ marginTop: "var(--space-12)", maxWidth: "65ch" }}>
           <p style={{ fontSize: "var(--text-sm)", color: "var(--text-tertiary)", fontStyle: "italic" }}>
-            I&apos;m also drawn to companies that care about sustainability, build products that
-            genuinely improve people&apos;s lives, and attract thoughtful, grounded people.
-            Compatibility with the kind of life I actually want to live matters.
+            Based in Fife, near the Scottish coast. I surf, I build things, I spend time with
+            my family. These aren&apos;t distractions from the work — they&apos;re what makes the
+            work good.
           </p>
         </div>
       </section>
@@ -98,8 +98,8 @@ export default function Home() {
           Open to the right conversation.
         </h2>
         <p style={{ maxWidth: "48ch", marginBottom: "var(--space-8)" }}>
-          If you&apos;re building something meaningful and think I might be a fit — I&apos;d like
-          to hear about it.
+          If something here resonates and you think there&apos;s a conversation worth having —
+          I&apos;d like to hear about it.
         </p>
         <a
           href="https://linkedin.com/in/domdunnett"
