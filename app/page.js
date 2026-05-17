@@ -55,9 +55,17 @@ export default function Home() {
                 spots, skill level, and session history. Built because forecast tools give you
                 numbers — not decisions.
               </p>
-              <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--text-tertiary)" }}>
+              <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--text-tertiary)", marginBottom: "var(--space-3)" }}>
                 React · Vercel · Claude AI · Open-Meteo · Supabase · PWA
               </p>
+              <a
+                href="https://shouldisurf.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--accent)" }}
+              >
+                shouldisurf.vercel.app ↗
+              </a>
             </div>
           </details>
         </div>
