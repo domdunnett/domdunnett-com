@@ -3,16 +3,16 @@ export default function Home() {
     <main>
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="container" style={{ paddingBlock: "var(--space-32) var(--space-24)" }}>
+      <section className="container" style={{ paddingBlock: "var(--space-16) var(--space-10)" }}>
         <p className="label" style={{ color: "var(--accent)", marginBottom: "var(--space-6)" }}>
-          Dom Dunnett — Senior PM
+          Dom Dunnett
         </p>
-        <h1 style={{ maxWidth: "16ch", marginBottom: "var(--space-8)" }}>
+        <h1 style={{ maxWidth: "15ch", marginBottom: "var(--space-6)" }}>
           I turn complexity into clarity — then ship it.
         </h1>
-        <p style={{ fontSize: "var(--text-lg)", maxWidth: "52ch", color: "var(--text-secondary)" }}>
-          Senior product leader building AI-native products. Scotland-based.
-          Increasingly close to the code.
+        <p style={{ fontSize: "var(--text-base)", maxWidth: "58ch", color: "var(--text-secondary)" }}>
+          Senior PM on the frontier of AI-native product work. Hands-on — I build real things,
+          test the real deal, and design the systems that help teams make better decisions faster.
         </p>
       </section>
 
@@ -20,48 +20,19 @@ export default function Home() {
 
       {/* ── How I Work ───────────────────────────────────────────────────── */}
       <section className="container section">
-        <p className="label" style={{ marginBottom: "var(--space-12)" }}>
-          How I Work
-        </p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "var(--space-6)" }}>
-          <div className="card">
-            <h4 style={{ marginBottom: "var(--space-3)" }}>AI as a platform shift, not a feature layer</h4>
-            <p style={{ fontSize: "var(--text-sm)" }}>
-              I treat AI as a genuine shift in how software gets built — not a trend to bolt
-              onto existing products. I stay close to the work: code, systems, evaluation.
-            </p>
-          </div>
-          <div className="card">
-            <h4 style={{ marginBottom: "var(--space-3)" }}>Craft still matters</h4>
-            <p style={{ fontSize: "var(--text-sm)" }}>
-              I do my best work when product, design and engineering are genuinely close.
-              Speed matters — but so does quality. I care about directness, clarity, and
-              communication that treats people as adults.
-            </p>
-          </div>
-          <div className="card">
-            <h4 style={{ marginBottom: "var(--space-3)" }}>Systems thinking over isolated features</h4>
-            <p style={{ fontSize: "var(--text-sm)" }}>
-              I connect strategy to execution. I prototype quickly. I bridge technical and
-              non-technical worlds. I bring clarity to ambiguity — and I build things to
-              prove ideas rather than just describe them.
-            </p>
-          </div>
-          <div className="card">
-            <h4 style={{ marginBottom: "var(--space-3)" }}>Sustainable ambition</h4>
-            <p style={{ fontSize: "var(--text-sm)" }}>
-              Exceptional work doesn&apos;t require burnout or permanent urgency. I believe the
-              best work comes from people who have a life outside work — and I try to be
-              one of those people.
-            </p>
-          </div>
-        </div>
-
-        <div style={{ marginTop: "var(--space-12)", maxWidth: "65ch" }}>
-          <p style={{ fontSize: "var(--text-sm)", color: "var(--text-tertiary)", fontStyle: "italic" }}>
-            Based in Fife, near the Scottish coast. I surf, I build things, I spend time with
-            my family. These aren&apos;t distractions from the work — they&apos;re what makes the
-            work good.
+        <p className="label" style={{ marginBottom: "var(--space-6)" }}>How I work</p>
+        <div style={{ display: "flex", flexDirection: "column", gap: "var(--space-3)", maxWidth: "58ch" }}>
+          <p style={{ color: "var(--text-primary)", lineHeight: "var(--leading-snug)" }}>
+            Craft over volume. Systems over features.
+          </p>
+          <p style={{ color: "var(--text-primary)", lineHeight: "var(--leading-snug)" }}>
+            I build real things and test the real deal — not manage from a distance.
+          </p>
+          <p style={{ color: "var(--text-primary)", lineHeight: "var(--leading-snug)" }}>
+            AI as a genuine platform shift. Direct, adult-to-adult communication.
+          </p>
+          <p style={{ color: "var(--text-primary)", lineHeight: "var(--leading-snug)" }}>
+            Sustainable ambition — exceptional work at a liveable pace.
           </p>
         </div>
       </section>
@@ -70,44 +41,53 @@ export default function Home() {
 
       {/* ── Projects ─────────────────────────────────────────────────────── */}
       <section className="container section">
-        <p className="label" style={{ marginBottom: "var(--space-12)" }}>Projects</p>
-        <div style={{ display: "grid", gap: "var(--space-6)", maxWidth: "680px" }}>
-          <div className="card">
-            <p className="label" style={{ color: "var(--accent)", marginBottom: "var(--space-4)" }}>
-              Active — 2025–present
-            </p>
-            <h3 style={{ marginBottom: "var(--space-4)" }}>Should I Surf?</h3>
-            <p style={{ marginBottom: "var(--space-4)" }}>
-              A personalised surf forecast tool that interprets raw conditions data in the
-              context of your spots, skill level, and logged session history. Built because
-              forecast tools give you numbers — not decisions.
-            </p>
-            <p style={{ fontSize: "var(--text-sm)", color: "var(--text-tertiary)" }}>
-              React · Vercel · Claude AI · Open-Meteo · Supabase · PWA
-            </p>
-          </div>
+        <p className="label" style={{ marginBottom: "var(--space-6)" }}>Projects</p>
+        <div style={{ display: "flex", flexDirection: "column", gap: "var(--space-4)", maxWidth: "60ch" }}>
+          <details>
+            <summary>
+              <span className="summary-icon">▸</span>
+              <span className="summary-title">Should I Surf?</span>
+              <span className="summary-meta">2025–present</span>
+            </summary>
+            <div className="expand-content">
+              <p style={{ color: "var(--text-secondary)", fontSize: "var(--text-sm)" }}>
+                Personalised surf forecast tool. Interprets raw conditions in the context of your
+                spots, skill level, and session history. Built because forecast tools give you
+                numbers — not decisions.
+              </p>
+              <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--text-tertiary)" }}>
+                React · Vercel · Claude AI · Open-Meteo · Supabase · PWA
+              </p>
+            </div>
+          </details>
         </div>
       </section>
 
       <hr className="divider" />
 
       {/* ── Contact ──────────────────────────────────────────────────────── */}
-      <section className="container section" style={{ paddingBottom: "var(--space-32)" }}>
-        <p className="label" style={{ marginBottom: "var(--space-6)" }}>Get in Touch</p>
-        <h2 style={{ maxWidth: "18ch", marginBottom: "var(--space-6)" }}>
-          Open to the right conversation.
-        </h2>
-        <p style={{ maxWidth: "48ch", marginBottom: "var(--space-8)" }}>
+      <section className="container section" style={{ paddingBottom: "var(--space-16)" }}>
+        <p className="label" style={{ marginBottom: "var(--space-6)" }}>Get in touch</p>
+        <p style={{ maxWidth: "48ch", marginBottom: "var(--space-6)", color: "var(--text-secondary)" }}>
           If something here resonates and you think there&apos;s a conversation worth having —
           I&apos;d like to hear about it.
         </p>
         <a
           href="https://linkedin.com/in/domdunnett"
-          className="btn btn-primary"
+          style={{
+            fontFamily: "var(--font-mono)",
+            fontSize: "var(--text-sm)",
+            color: "var(--accent)",
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "var(--space-2)",
+            transition: "color var(--duration-fast) var(--ease)"
+          }}
           target="_blank"
           rel="noopener noreferrer"
         >
-          Connect on LinkedIn
+          <span style={{ color: "var(--text-tertiary)" }}>→</span>
+          linkedin.com/in/domdunnett
         </a>
       </section>
 
