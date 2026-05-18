@@ -54,7 +54,7 @@ export default function Home() {
             </div>
             <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--accent)", marginBottom: "var(--space-2)" }}>Product Manager</p>
             <p style={{ fontSize: "var(--text-sm)", color: "var(--text-secondary)", lineHeight: "var(--leading-snug)" }}>
-              Building AI-powered legal tooling — the first role where my background in law, engineering, and product are all in the same room.
+              First product hire. Building AI-powered legal tooling — the first role where my background in law, engineering, and product are all in the same room.
             </p>
           </div>
 
