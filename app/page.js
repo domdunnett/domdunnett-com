@@ -127,12 +127,12 @@ export default function Home() {
                 React · Vercel · Claude AI · Open-Meteo · Supabase · PWA
               </p>
               <a
-                href="https://should-i-surf.vercel.app"
+                href="https://shouldi.surf"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--accent)" }}
               >
-                should-i-surf.vercel.app ↗
+                shouldi.surf ↗
               </a>
             </div>
           </details>
