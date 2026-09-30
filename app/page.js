@@ -11,8 +11,8 @@ export default function Home() {
           I turn complexity into clarity — then ship it.
         </h1>
         <p style={{ fontSize: "var(--text-base)", maxWidth: "58ch", color: "var(--text-secondary)", marginBottom: "var(--space-4)" }}>
-          Product Manager building AI-native tools and systems for real-world work.
-          Engineer by training — I work close to the code and test the real thing.
+          Product leader with a background in law and software engineering.
+          I turn complicated problems into useful products — and still work close to the code.
         </p>
         <p style={{ fontSize: "var(--text-sm)", maxWidth: "52ch", color: "var(--text-tertiary)", fontFamily: "var(--font-mono)" }}>
           Based in Scotland — near enough to the sea that the surf forecast has become a side project.
@@ -32,7 +32,7 @@ export default function Home() {
             I build real things and test the real deal — not manage from a distance.
           </p>
           <p style={{ color: "var(--text-primary)", lineHeight: "var(--leading-snug)" }}>
-            AI as a genuine platform shift. Direct, adult-to-adult communication.
+            Direct, adult-to-adult communication. Small teams with real ownership.
           </p>
           <p style={{ color: "var(--text-primary)", lineHeight: "var(--leading-snug)" }}>
             Sustainable ambition — exceptional work at a liveable pace.
@@ -54,7 +54,7 @@ export default function Home() {
             </div>
             <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--accent)", marginBottom: "var(--space-2)" }}>Product Manager</p>
             <p style={{ fontSize: "var(--text-sm)", color: "var(--text-secondary)", lineHeight: "var(--leading-snug)" }}>
-              First product hire. Building AI-powered legal tooling — the first role where my background in law, engineering, and product are all in the same room.
+              Building AI-powered legal technology — the first role where my background in law, engineering, and product are all in the same room.
             </p>
           </div>
 
@@ -65,7 +65,7 @@ export default function Home() {
             </div>
             <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--accent)", marginBottom: "var(--space-2)" }}>Senior Product Manager</p>
             <p style={{ fontSize: "var(--text-sm)", color: "var(--text-secondary)", lineHeight: "var(--leading-snug)" }}>
-              Senior PM across consumer fintech at one of Europe&apos;s largest financial apps.
+              Led onboarding for Revolut Business, improving conversion while reducing fraud and support demand.
             </p>
           </div>
 
@@ -76,7 +76,7 @@ export default function Home() {
             </div>
             <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--accent)", marginBottom: "var(--space-2)" }}>PM → Senior PM → Product Lead</p>
             <p style={{ fontSize: "var(--text-sm)", color: "var(--text-secondary)", lineHeight: "var(--leading-snug)" }}>
-              Four years scaling payments infrastructure across Southeast Asia. Joined as an early PM hire, left as Product Lead for Money-In across the region.
+              Four years scaling payments infrastructure across Southeast Asia. Joined as an early PM hire and became Product Lead for Money-In, leading teams across five markets.
             </p>
           </div>
 
@@ -145,8 +145,7 @@ export default function Home() {
       <section className="container section" style={{ paddingBottom: "var(--space-16)" }}>
         <p className="label" style={{ marginBottom: "var(--space-6)" }}>Get in touch</p>
         <p style={{ maxWidth: "48ch", marginBottom: "var(--space-6)", color: "var(--text-secondary)" }}>
-          If something here resonates and you think there&apos;s a conversation worth having —
-          I&apos;d like to hear about it.
+          I&apos;m always interested in thoughtful people building useful things.
         </p>
         <a
           href="https://linkedin.com/in/domdunnett"
