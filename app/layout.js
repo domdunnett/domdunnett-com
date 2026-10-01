@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Dom Dunnett",
-  description: "Senior PM. AI-native product operator. Scotland-based.",
+  description: "Product leader, former software engineer and lawyer. Scotland-based.",
 };
 
 export default function RootLayout({ children }) {
