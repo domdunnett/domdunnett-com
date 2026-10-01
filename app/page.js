@@ -1,3 +1,5 @@
+import AskDom from "../components/AskDom";
+
 export default function Home() {
   return (
     <main>
@@ -17,6 +19,7 @@ export default function Home() {
         <p style={{ fontSize: "var(--text-sm)", maxWidth: "52ch", color: "var(--text-tertiary)", fontFamily: "var(--font-mono)" }}>
           Based in Scotland, near enough to the sea that the surf forecast has become a side project.
         </p>
+        <AskDom />
       </section>
 
       <hr className="divider" />
