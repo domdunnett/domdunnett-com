@@ -259,3 +259,135 @@ details > summary:hover .summary-title {
   flex-direction: column;
   gap: var(--space-3);
 }
+
+
+/* Should I Surf project signature.
+   A quiet adaptation of the app's response loader: the mark drifts with the swell
+   while two wave lines move at slightly different speeds. */
+.sis-project-mark {
+  width: 30px;
+  height: 30px;
+  margin-right: 2px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  transform-origin: center bottom;
+}
+
+.sis-project-mark img {
+  display: block;
+  width: 26px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.sis-project-swell {
+  position: relative;
+  width: 28px;
+  height: 8px;
+  margin-top: -3px;
+  overflow: hidden;
+  opacity: 0.8;
+  color: var(--accent);
+}
+
+.sis-project-wave {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 336px;
+  height: 8px;
+  overflow: visible;
+}
+
+/* Do not rely on currentColor inside the nested SVG here. Give the paths
+   theme-aware strokes explicitly so the swell stays legible on both canvases. */
+.sis-project-wave path {
+  stroke: #82C4DC;
+}
+
+@media (prefers-color-scheme: light) {
+  .sis-project-wave path {
+    stroke: #3D6B7E;
+  }
+}
+
+.sis-project-wave-a { top: 0; }
+.sis-project-wave-b { top: 1px; opacity: 0.55; }
+
+details[open] .sis-project-mark {
+  animation: sis-mark-swell 5.6s ease-in-out infinite;
+}
+
+details[open] .sis-project-wave-a {
+  animation: sis-wave-scroll 4.8s linear infinite;
+}
+
+details[open] .sis-project-wave-b {
+  animation: sis-wave-scroll 5.6s linear infinite reverse;
+}
+
+details:not([open]) summary:hover .sis-project-mark,
+details:not([open]) summary:focus-visible .sis-project-mark {
+  animation: sis-mark-nudge 650ms ease-out;
+}
+
+details:not([open]) .sis-project-wave-a {
+  transform: translateX(-7px);
+}
+
+details:not([open]) .sis-project-wave-b {
+  transform: translateX(-13px);
+}
+
+details:not([open]) summary:hover .sis-project-wave-a,
+details:not([open]) summary:focus-visible .sis-project-wave-a {
+  animation: sis-wave-peek-a 900ms ease-out;
+}
+
+details:not([open]) summary:hover .sis-project-wave-b,
+details:not([open]) summary:focus-visible .sis-project-wave-b {
+  animation: sis-wave-peek-b 1100ms ease-out;
+}
+
+@keyframes sis-mark-swell {
+  0%, 100% { transform: translate(0, 0); }
+  30% { transform: translate(1px, -2px); }
+  65% { transform: translate(-1px, 1px); }
+}
+
+@keyframes sis-wave-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-112px); }
+}
+
+@keyframes sis-mark-nudge {
+  0%, 100% { transform: translateY(0); }
+  45% { transform: translateY(-2px); }
+}
+
+@keyframes sis-wave-peek-a {
+  from { transform: translateX(-7px); }
+  to { transform: translateX(-35px); }
+}
+
+@keyframes sis-wave-peek-b {
+  from { transform: translateX(-13px); }
+  to { transform: translateX(-41px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  details[open] .sis-project-mark,
+  details[open] .sis-project-wave-a,
+  details[open] .sis-project-wave-b,
+  details:not([open]) summary:hover .sis-project-mark,
+  details:not([open]) summary:focus-visible .sis-project-mark,
+  details:not([open]) summary:hover .sis-project-wave-a,
+  details:not([open]) summary:focus-visible .sis-project-wave-a,
+  details:not([open]) summary:hover .sis-project-wave-b,
+  details:not([open]) summary:focus-visible .sis-project-wave-b {
+    animation: none;
+  }
+}

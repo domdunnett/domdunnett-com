@@ -114,17 +114,28 @@ export default function Home() {
           <details>
             <summary>
               <span className="summary-icon">▸</span>
+              <span className="sis-project-mark" aria-hidden="true">
+                <img src="/should-i-surf-mark.svg" alt="" />
+                <span className="sis-project-swell">
+                  <svg className="sis-project-wave sis-project-wave-a" viewBox="0 0 336 10" aria-hidden="true">
+                    <path d="M0 5 Q 14 1 28 5 T 56 5 T 84 5 T 112 5 T 140 5 T 168 5 T 196 5 T 224 5 T 252 5 T 280 5 T 308 5 T 336 5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+                  </svg>
+                  <svg className="sis-project-wave sis-project-wave-b" viewBox="0 0 336 10" aria-hidden="true">
+                    <path d="M0 6 Q 18 3 36 6 T 72 6 T 108 6 T 144 6 T 180 6 T 216 6 T 252 6 T 288 6 T 324 6 T 336 6" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+                  </svg>
+                </span>
+              </span>
               <span className="summary-title">Should I Surf?</span>
               <span className="summary-meta">2025–present</span>
             </summary>
             <div className="expand-content">
               <p style={{ color: "var(--text-secondary)", fontSize: "var(--text-sm)" }}>
-                Personalised surf forecast tool. Interprets raw conditions in the context of your
-                spots, skill level, and session history. Built because forecast tools give you
-                numbers, not decisions.
+                A personalised surf forecasting app that learns where, when, and how you like to
+                surf, then turns forecast data into a simple recommendation. Built because forecast
+                tools give you numbers, not decisions. Currently building the native iOS app.
               </p>
               <p style={{ fontFamily: "var(--font-mono)", fontSize: "var(--text-xs)", color: "var(--text-tertiary)", marginBottom: "var(--space-3)" }}>
-                React · Vercel · Claude AI · Open-Meteo · Supabase · PWA
+                iOS · AI · Open-Meteo · Supabase
               </p>
               <a
                 href="https://shouldi.surf"
