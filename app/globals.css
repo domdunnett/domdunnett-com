@@ -542,3 +542,29 @@ details:not([open]) summary:focus-visible .sis-project-wave-b {
   .ask-dom-answer,
   .ask-dom-pulse { animation: none; }
 }
+
+.ask-dom-model {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+  margin-bottom: var(--space-3);
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+}
+.ask-dom-model button {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--accent);
+  padding: 6px 9px;
+  font: inherit;
+  cursor: pointer;
+}
+.ask-dom-model button:disabled { opacity: .5; cursor: wait; }
+.ask-dom-model small { flex-basis: 100%; font: inherit; line-height: 1.6; }
+.ask-dom-model progress { width: 100%; height: 4px; accent-color: var(--accent); }
+.ask-dom-provider { display: block; margin-top: var(--space-3); color: var(--text-tertiary); font-family: var(--font-mono); font-size: var(--text-xs); }
+.ask-dom-source { color: var(--text-tertiary); text-decoration: none; }
+.ask-dom-source:hover { color: var(--accent); }
