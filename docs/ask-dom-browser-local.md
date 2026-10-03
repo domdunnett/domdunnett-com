@@ -42,6 +42,7 @@ Run `npm ci`, `npm test`, `npm run lint`, `npm run build`, then `npm start`.
 - Desktop Chromium: public-note answers/citations render, and the ordinary page makes no external requests. Optional runtime loads only after clicking Try local AI.
 - iPhone 15 emulation: engineering answer/citation work, no horizontal overflow, no external/model requests and no AI-download button.
 - The initial real-model load encountered a browser Cache API error on this low-disk machine. The UI recovered to notes without an error overlay; direct fetches of the runtime/config returned HTTP 200. This is a useful observed failure-path test, separate from automated mocks.
+- After clearing task-generated build dependencies, a retry displayed shard progress past 80%, but subsequent cache writes still failed. **A real generated answer, cold/warm load timings and inference speed remain unverified.** Do not treat the mocked local-provider tests as a successful GPU benchmark. Temporary model caches and installed dependencies were cleared afterwards to recover disk space; run `npm ci` before further local work.
 
 The inherited dependencies have npm audit findings, including a critical advisory against the existing Next.js version. The added WebLLM dependency did not appear in the audit findings. Framework/security upgrades belong in a separate reviewed change; this draft should not be merged without addressing inherited advisories and completing representative device/model-quality evaluation.
 
